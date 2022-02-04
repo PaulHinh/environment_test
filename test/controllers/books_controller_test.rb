@@ -38,7 +38,7 @@ class BooksControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to book_url(@book)
   end
 
-  test "should destroy book" do
+  test "should delete book" do
     assert_difference('Book.count', -1) do
       delete book_url(@book)
     end

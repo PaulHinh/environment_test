@@ -38,12 +38,12 @@ class BooksTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "destroying a Book" do
+  test "deleting a Book" do
     visit books_url
     page.accept_confirm do
-      click_on "Destroy", match: :first
+      click_on "Delete", match: :first
     end
 
-    assert_text "Book was successfully destroyed"
+    assert_text "Book was successfully deleted"
   end
 end
